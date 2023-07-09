@@ -1,0 +1,426 @@
+@font-face {
+    font-family: SolaimanLipi;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/solaimanlipi_20-04-07.eot) format("embedded-opentype"), url(../fonts/solaimanlipi_20-04-07.woff) format("woff"), url(../fonts/solaimanlipi_20-04-07.ttf) format("truetype"), url(../fonts/solaimanlipi_20-04-07.svg) format("svg");
+    font-display: swap
+}
+
+* {
+    font-family: SolaimanLipi, Arial, Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #E03C31;
+    --red-dark: #b30f0f;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #28daf6;
+    --white: #fff;
+    --black: #000;
+    --black2: #222222;
+    --black3: #333333;
+    --black4: #454545;
+    --shadeofgray: #ddd;
+    --gray: #6c757d;
+    --gray74: #bdbdbd;
+    --gray-light: #E2E1E1;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+p {
+    margin: 0;
+}
+
+li {
+
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/* === End Common Style === */
+
+/* === Start Header Style === */
+
+/* #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+} */
+
+/* === Start Top Header Style === */
+
+.top-header {
+    padding: 5px 0;
+}
+
+.date p {
+    color: var(--dark4);
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.social-icon {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+.e-paper {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--dark4);
+}
+
+.e-paper:hover {
+    color: var(--red);
+}
+
+/* === End Top Header Style === */
+
+/* === Start Header Style === */
+
+.header {
+    background-color: var(--black2);
+    box-shadow: var(--box-shadow);
+    position: sticky;
+}
+
+.header .navbar {
+    padding: 0;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.header .nav-link {
+    color: var(--white);
+    font-size: 18px;
+    padding: 5px 15px;
+    padding-top: 3px;
+
+}
+
+.header .nav-link:hover,
+.dropdown-item:hover {
+    color: var(--red);
+}
+
+.home-icon {
+    fill: var(--white);
+    font-size: 20px;
+}
+
+.home-icon:hover {
+    fill: #e03c31;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--red);
+}
+
+.homeIcon {
+    color: var(--white);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* === Mega Menu === */
+
+.drop-area {
+    position: static;
+
+}
+
+.mega-area {
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.dropdown-item:hover {
+    background-color: var(--black2);
+    color: var(--white);
+}
+
+.dropdown-item:focus {
+    background-color: var(--black2);
+    color: var(--white);
+}
+
+/* === Dropdown on Hover === */
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
+}
+
+/* === Search Box === */
+
+.search-box {
+    position: absolute;
+    right: -20px;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.search-box:hover {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.search-box:hover input {
+    display: block;
+}
+
+.search-box:hover .search-icon {
+    fill: var(--gray);
+}
+
+.search-box input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--black);
+    font-size: 18px;
+    color: var(--gray);
+    padding: 0 10px;
+    display: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    fill: var(--white);
+    background-color: transparent;
+}
+
+/* === End Header Style === */
+
+.min-height {
+    min-height: calc(100vh - 283px);
+}
+
+/* === Start Main Style === */
+
+.news-title {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.card:hover .news-title {
+    color: var(--red) !important;
+}
+
+.featured-news {
+    padding: 20px 0;
+}
+
+.featured-news .left-side .news-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    padding: 0 5px;
+    margin-bottom: 0;
+}
+
+.top-featured .news-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+
+
+/* === Start Footer Style === */
+
+.footer {
+    background-color: var(--gray-light);
+    color: var(--white);
+    padding: 20px 0 0;
+    border-top: 1px solid var(--black);
+}
+
+.important-links a {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.important-links a:hover {
+    background-color: var(--white);
+    color: var(--red);
+    font-weight: 700;
+}
+
+.footer-info {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.footer-info h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.footer-info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.footer-info p span {
+    font-weight: 600;
+}
+
+.footer-info a {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.footer-info a:hover {
+    color: var(--red);
+}
+
+.copyWrite {
+    background-color: var(--black);
+}
+
+.copyWrite small a {
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.copyWrite small a:hover {
+    color: var(--red);
+}
+
+/* === Start Responsive Style === */
+
+/* === Responsive xl Style === */
+@media only screen and (max-width: 1200px) {}
+
+/* === Responsive lg Style === */
+@media only screen and (max-width: 992px) {
+    .min-height {
+        min-height: calc(100vh - 372px);
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .search-box {
+        top: 0;
+    }
+}
+
+/* === Responsive md Style === */
+@media only screen and (max-width: 768px) {
+    .min-height {
+        min-height: calc(100vh - 420px);
+    }
+}
+
+/* === Responsive sm Style === */
+@media only screen and (max-width: 576px) {
+    .min-height {
+        min-height: calc(100vh - 511px);
+    }
+}
