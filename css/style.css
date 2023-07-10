@@ -6,15 +6,6 @@
     font-display: swap
 }
 
-* {
-    font-family: SolaimanLipi, Arial, Helvetica, sans-serif !important;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
 
 :root {
     --blue: #007bff;
@@ -48,7 +39,22 @@
     --dark: #343a40;
     --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     --white-black-gradient: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 46%, rgba(0, 0, 0, 1) 100%);
+}
 
+
+* {
+    font-family: SolaimanLipi, Arial, Helvetica, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 p {
@@ -271,6 +277,31 @@ a {
 
 /* === Common Style === */
 
+.category-title {
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.category-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+.category-title .see-all a {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.category-title .see-all:hover * {
+    color: var(--red);
+    fill: var(--red);
+}
+
 .news-title {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -279,7 +310,7 @@ a {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.card:hover .news-title {
+.news:hover .news-title {
     color: var(--red) !important;
 }
 
@@ -293,9 +324,14 @@ a {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
-.card:hover img {
+.news:hover img {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -303,33 +339,63 @@ a {
     -o-transform: scale(1.05);
 }
 
-.small-title {
-    border-top: 2px solid var(--red);
-    border-bottom: 2px solid var(--red);
+.news-border {
+    border: 0.5px solid var(--black4);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
-.small-title h3 {
-    font-size: 20px;
+.news-top-body {
+    padding: 10px 0 0;
+}
+
+.news-top-body h2 {
+    font-size: 18px;
     font-weight: 500;
     color: var(--black);
     margin-bottom: 0;
 }
 
+
+.horizontal-news .news-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    padding: 0 5px;
+    margin-bottom: 0;
+}
+
 /* === End Common Style === */
+
+/* === Ad Style === */
+.long-ad {
+    margin: 10px 0;
+}
+
+.long-ad img {
+    width: 100%;
+    border: 1px solid var(--red);
+}
+
+.squire-ad {
+    margin-top: 10px;
+}
+
+.squire-ad img {
+    width: 100%;
+    border: 1px solid var(--red);
+}
+
+/* === End Ad Style === */
 
 /* === Start Featured Style === */
 
 .featured-news {
     padding: 20px 0;
 
-}
-
-.featured-news .left-featured .news-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--black);
-    padding: 0 5px;
-    margin-bottom: 0;
 }
 
 .top-featured .card {
@@ -360,29 +426,25 @@ a {
     padding: 10px;
 }
 
-
-
-/* === Ad Style === */
-.long-ad {
-    margin: 10px 0;
-}
-
-.long-ad img {
-    width: 100%;
-    border: 1px solid var(--black);
-}
-
-.squire-ad {
-    margin-top: 10px;
-}
-
-.squire-ad img {
-    width: 100%;
-    border: 1px solid var(--black);
-}
-
-/* === End Ad Style === */
 /* === End Featured Style === */
+
+/* === Start National Style === */
+.latestNews-maxView .nav-link {
+    background-color: var(--black2);
+    color: var(--white);
+}
+
+.latestNews-maxView .nav-link.active {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.latestNews-maxView .tab-content {
+    height: 458px;
+}
+
+/* === End National Style === */
+
 
 /* === Start Footer Style === */
 
