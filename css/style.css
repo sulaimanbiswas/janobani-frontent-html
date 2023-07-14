@@ -348,6 +348,15 @@ a {
     -o-border-radius: 0;
 }
 
+.news-border-right {
+    border-right: 0.5px solid var(--black4);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
 .news-top-body {
     padding: 10px 0 0;
 }
@@ -445,6 +454,219 @@ a {
 
 /* === End National Style === */
 
+/* === Start Bangladesh Style === */
+
+.map {
+    padding: 0 60px;
+}
+
+.st0 {
+    opacity: 0.7;
+}
+
+.st1 {
+    fill: #80c2eb;
+}
+
+.st2 {
+    fill: none;
+}
+
+.st3 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st4 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st5 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st6 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st7 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st8 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st9 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st10 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st11 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st13 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+}
+
+.st14 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+}
+
+.st15 {
+    fill: #be241e;
+    stroke: #ffffff;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+}
+
+.st16 {
+    enable-background: new;
+}
+
+.st17 {
+    fill: #ffffff;
+}
+
+.st18 {
+    opacity: 0.34;
+}
+
+.st19 {
+    fill: #d5d5d5;
+}
+
+#rangpur:hover path {
+    fill: #9a1515;
+}
+
+#rangpur:hover path.st17 {
+    fill: #fff;
+}
+
+#rangpur:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#mymensingh:hover path {
+    fill: #9a1515;
+}
+
+#mymensingh:hover path.st17 {
+    fill: #fff;
+}
+
+#mymensingh:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#sylhet:hover path {
+    fill: #9a1515;
+}
+
+#sylhet:hover path.st17 {
+    fill: #fff;
+}
+
+#sylhet:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#rajshahi:hover path {
+    fill: #9a1515;
+}
+
+#rajshahi:hover path.st17 {
+    fill: #fff;
+}
+
+#rajshahi:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#khulna:hover path {
+    fill: #9a1515;
+}
+
+#khulna:hover path.st17 {
+    fill: #fff;
+}
+
+#khulna:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#borishal:hover path {
+    fill: #9a1515;
+}
+
+#borishal:hover path.st17 {
+    fill: #fff;
+}
+
+#borishal:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#chittagong:hover path {
+    fill: #9a1515;
+}
+
+#chittagong:hover path.st17 {
+    fill: #fff;
+}
+
+#chittagong:hover path.st19 {
+    fill: #d5d5d5;
+}
+
+#dhaka:hover path {
+    fill: #9a1515;
+}
+
+#dhaka:hover path.st17 {
+    fill: #fff;
+}
+
+#dhaka:hover path.st19 {
+    fill: #d5d5d5;
+}
 
 /* === Start Footer Style === */
 
@@ -568,6 +790,10 @@ a {
 @media only screen and (max-width: 768px) {
     .min-height {
         min-height: calc(100vh - 420px);
+    }
+
+    .news-border-right {
+        border-right: none;
     }
 }
 
