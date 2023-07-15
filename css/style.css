@@ -172,6 +172,8 @@ a {
     fill: #e03c31;
 }
 
+
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     color: var(--red);
@@ -388,6 +390,45 @@ a {
     padding: 0 5px;
     margin-bottom: 0;
 }
+
+/* === Start Breadcrumb Style === */
+
+.breadcrumb-section {
+    background-color: var(--gray-light);
+}
+
+.breadcrumb-home-icon {
+    fill: var(--black);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.breadcrumb-item {
+    margin-top: 3px;
+}
+
+.breadcrumb-item.active {
+    color: var(--black)
+}
+
+.breadcrumb-item.active:hover {
+    color: var(--black)
+}
+
+.breadcrumb-item:hover {
+    color: var(--red);
+
+}
+
+.breadcrumb-item:first-child {
+    margin-top: 0;
+}
+
+.breadcrumb-item:first-child .breadcrumb-home-icon:hover {
+    fill: var(--red);
+}
+
+/* === End Breadcrumb Style === */
 
 /* === End Common Style === */
 
