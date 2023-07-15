@@ -277,6 +277,14 @@ a {
 
 /* === Common Style === */
 
+.card {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
 .category-title {
     border-top: 2px solid var(--red);
     border-bottom: 2px solid var(--red);
@@ -312,6 +320,10 @@ a {
 
 .news:hover .news-title {
     color: var(--red) !important;
+}
+
+.cat-lead-title {
+    font-size: 25px !important;
 }
 
 .news-img {
@@ -666,6 +678,26 @@ a {
 
 #dhaka:hover path.st19 {
     fill: #d5d5d5;
+}
+
+/* === End Bangladesh Style === */
+
+/* === Start Photo Gallery Style === */
+
+.gallery {
+    background-color: var(--black2);
+}
+
+.photo-gallery .card {
+    background: transparent;
+}
+
+.photo-gallery .cat-lead-title {
+    color: var(--white);
+}
+
+.photo-gallery .news-title {
+    color: var(--white);
 }
 
 /* === Start Footer Style === */
