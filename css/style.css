@@ -405,6 +405,7 @@ a {
 
 .breadcrumb-item {
     margin-top: 3px;
+    font-size: 18px;
 }
 
 .breadcrumb-item.active {
@@ -428,9 +429,62 @@ a {
     fill: var(--red);
 }
 
+
 /* === End Breadcrumb Style === */
 
+/* === Start Pagination Style === */
+
+.pagination {
+    background-color: var(--gray-light);
+}
+
+.pagination .page-link {
+    background-color: transparent;
+}
+
+.pagination-section .page-item.active .page-link {
+    background-color: var(--black2);
+    color: var(--white);
+    border: 0;
+
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.pagination-section .page-link {
+    color: var(--black2);
+    border: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+.pagination-section .page-link:hover {
+    color: var(--white);
+    background-color: var(--black2);
+}
+
+.pagination-section .page-link:focus {
+    box-shadow: none;
+    background-color: none;
+    color: none;
+}
+
+
+/* === End Pagination Style === */
+
 /* === End Common Style === */
+
 
 /* === Ad Style === */
 .long-ad {
