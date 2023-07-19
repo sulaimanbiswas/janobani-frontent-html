@@ -26,6 +26,7 @@
     --black4: #454545;
     --shadeofgray: #ddd;
     --gray: #6c757d;
+    --gray-2: #f5f5f5;
     --gray74: #bdbdbd;
     --gray-light: #E2E1E1;
     --gray-dark: #343a40;
@@ -74,6 +75,10 @@ li a {
 a {
     text-decoration: none;
     color: var(--dark);
+}
+
+hr {
+    margin: .5rem 0;
 }
 
 /* === End Common Style === */
@@ -394,38 +399,47 @@ a {
 /* === Start Breadcrumb Style === */
 
 .breadcrumb-section {
-    background-color: var(--gray-light);
+    background-color: var(--gray-2);
 }
 
-.breadcrumb-home-icon {
-    fill: var(--black);
+.breadcrumb-section .breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-section .breadcrumb-home-icon {
+    fill: var(--red);
     font-size: 18px;
     margin-right: 5px;
 }
 
-.breadcrumb-item {
+.breadcrumb-section .breadcrumb-item {
     margin-top: 3px;
     font-size: 18px;
+    color: var(--red)
 }
 
-.breadcrumb-item.active {
-    color: var(--black)
+.breadcrumb-section .breadcrumb-item.active {
+    color: var(--red)
 }
 
-.breadcrumb-item.active:hover {
-    color: var(--black)
+.breadcrumb-section .breadcrumb-item.active:hover {
+    color: var(--red)
 }
 
-.breadcrumb-item:hover {
+.breadcrumb-section .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--red);
+}
+
+.breadcrumb-section .breadcrumb-item:hover {
     color: var(--red);
 
 }
 
-.breadcrumb-item:first-child {
+.breadcrumb-section .breadcrumb-item:first-child {
     margin-top: 0;
 }
 
-.breadcrumb-item:first-child .breadcrumb-home-icon:hover {
+.breadcrumb-section .breadcrumb-item:first-child .breadcrumb-home-icon:hover {
     fill: var(--red);
 }
 
@@ -795,7 +809,24 @@ a {
     color: var(--white);
 }
 
+
+/* === Start View Page Style === */
+
+.post-writter-details .writter-details p {
+    fill: var(--red);
+    font-size: 16px;
+}
+
+.post-writter-details .writter-details p span {
+    margin-right: 5px;
+}
+
+button.social-icon {
+    background-color: transparent !important;
+}
+
 /* === Start Footer Style === */
+
 
 .footer {
     background-color: var(--gray-light);
