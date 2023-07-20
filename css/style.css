@@ -157,7 +157,7 @@ hr {
 
 .header .nav-link {
     color: var(--white);
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 15px;
     padding-top: 3px;
 
@@ -812,17 +812,34 @@ hr {
 
 /* === Start View Page Style === */
 
-.post-writter-details .writter-details p {
+.news-writter-details .writter-details p {
     fill: var(--red);
     font-size: 16px;
 }
 
-.post-writter-details .writter-details p span {
+.news-writter-details .writter-details p span {
     margin-right: 5px;
 }
 
 button.social-icon {
     background-color: transparent !important;
+}
+
+.news-body .news-caption {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray);
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.news-body p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* === Start Footer Style === */
